@@ -1,0 +1,33 @@
+/******** 
+==== 
+GRID CONTAINER 
+====
+
+*********/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 1fr auto;
+  gap: 1px;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.header,
+.content,
+.footer {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* Tablet: 3 columns */
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr); /* Desktop: 5 columns */
+  }
+}

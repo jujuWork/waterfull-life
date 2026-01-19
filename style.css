@@ -9,6 +9,18 @@ Version: 1.0
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--main-text-color);
+}
+
+:root {
+  /*BACKGROUND COLORS */
+  --main-bg-color: #ffffff;
+  --section-bg-color: #eaf6f6;
+  --card-bg-color: #c4dfdf;
+  --button-bg-color: #6ba4a4;
+  /* TEXT COLORS */
+  --main-text-color: #2e4f4f;
+  --sub-text-color: #1f3f3f;
 }
 
 html {
@@ -19,4 +31,6 @@ html {
 body {
   display: grid;
   place-items: center;
+  background-color: var(--main-bg-color);
+  position: relative;
 }

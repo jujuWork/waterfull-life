@@ -29,9 +29,17 @@ function my_styles ()
         filemtime($theme_path . '/assets/css/header/header.css')
     );
 
+    // NAVIGATION STYLES
+    wp_enqueue_style(
+        'navigation-style',
+        $theme_uri . '/assets/css/navigation/nav.css',
+        array(),
+        filemtime($theme_path . '/assets/css/navigation/nav.css')
+    );
+
     // CONTENT STYLES
     wp_enqueue_style(
-        'main-style',
+        'content-style',
         $theme_uri . '/assets/css/content/content.css',
         array(),
         filemtime($theme_path . '/assets/css/content/content.css')

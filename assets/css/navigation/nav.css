@@ -7,6 +7,8 @@ nav {
   height: 100%;
   /* position: absolute; */
   display: flex;
+  padding: 0 10px;
+  margin-top: 1rem;
 }
 
 .nav__items {
@@ -15,6 +17,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .nav__logo {
@@ -23,12 +27,13 @@ nav {
 }
 
 .nav__links {
-  border: 1px solid red;
   width: 8em;
-  height: 5em;
+  height: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: var(--main-font-size);
+  border-radius: 5px;
 }
 
 .nav__contact {

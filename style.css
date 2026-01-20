@@ -18,9 +18,13 @@ Version: 1.0
   --section-bg-color: #eaf6f6;
   --card-bg-color: #c4dfdf;
   --button-bg-color: #6ba4a4;
+
   /* TEXT COLORS */
-  --main-text-color: #2e4f4f;
+  --main-text-color: #1f3f3f;
   --sub-text-color: #1f3f3f;
+
+  /* FONT SIZE */
+  --main-font-size: font-size: clamp(0.75rem, 5vw, 1rem);
 }
 
 html {

@@ -5,10 +5,7 @@ nav {
 .nav__container {
   width: 100%;
   height: 100%;
-  /* position: absolute; */
   display: flex;
-  padding: 0 10px;
-  margin-top: 1rem;
 }
 
 .nav__items {
@@ -26,16 +23,30 @@ nav {
   border: 1px solid blue;
 }
 
-.nav__links {
+.nav__links a {
   width: 8em;
-  height: 3em;
+  height: 2.5em;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: var(--main-font-size);
-  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow:
+    inset 0 0 0 #6ba4a4,
+    0.1;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav__links a:hover {
+  box-shadow: inset 300px 0 0 #6ba4a4;
+  color: var(--main-bg-color);
+  transform: scale(1.1);
 }
 
 .nav__contact {
-  border: 1px solid brown;
+  width: 10em;
+  height: 2.5em;
+  font-size: var(--main-font-size);
+  cursor: pointer;
 }

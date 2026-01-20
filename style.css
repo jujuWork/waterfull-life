@@ -38,3 +38,7 @@ body {
   background-color: var(--main-bg-color);
   position: relative;
 }
+
+a {
+  text-decoration: none;
+}
